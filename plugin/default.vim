@@ -23,12 +23,10 @@ if !has('nvim')
   set autoindent                 " Indent at the same level of the previous line
   set autoread                   " Automatically read a file changed outside of vim
   set backspace=indent,eol,start " Backspace for dummies
-  set complete-=i                " Exclude files completion
   set display=lastline           " Show as much as possible of the last line
   set encoding=utf-8             " Set default encoding
   set history=10000              " Maximum history record
   set hlsearch                   " Highlight search terms
-  set incsearch                  " Find as you type search
   set laststatus=2               " Always show status line
   set mouse=a                    " Automatically enable mouse usage
   set smarttab                   " Smart tab
@@ -42,11 +40,9 @@ endif
 
 set shortmess=atOI " No help Uganda information, and overwrite read messages to avoid PRESS ENTER prompts
 set ignorecase     " Case insensitive search
-set smartcase      " ... but case sensitive when uc present
 set scrolljump=5   " Line to scroll when cursor leaves screen
 set scrolloff=3    " Minumum lines to keep above and below cursor
-set nowrap         " Do not wrap long lines
-set shiftwidth=4   " Use indents of 4 spaces
+set shiftwidth=2   " Use indents of 4 spaces
 set tabstop=4      " An indentation every four columns
 set softtabstop=4  " Let backspace delete indent
 set splitright     " Puts new vsplit windows to the right of the current
@@ -55,7 +51,6 @@ set autowrite      " Automatically write a file when leaving a modified buffer
 set mousehide      " Hide the mouse cursor while typing
 set hidden         " Allow buffer switching without saving
 set t_Co=256       " Use 256 colors
-set ruler          " Show the ruler
 set showcmd        " Show partial commands in status line and Selected characters/lines in visual mode
 set showmode       " Show current mode in command-line
 set showmatch      " Show matching brackets/parentthesis
@@ -146,7 +141,6 @@ set background=dark         " Assume dark background
 set cursorline              " Highlight current line
 set fileformats=unix,dos,mac        " Use Unix as the standard file type
 set number                  " Line numbers on
-set relativenumber          " Relative numbers on
 set fillchars=stl:\ ,stlnc:\ ,fold:\ ,vert:│
 
 " Annoying temporary files
